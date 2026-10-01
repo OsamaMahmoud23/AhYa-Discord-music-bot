@@ -1,0 +1,43 @@
+{
+  "name": "ah_ya-music-bot",
+  "version": "1.0.0",
+  "description": "AH_YA - A feature-rich Discord music bot with YouTube/Spotify support, lyrics, and interactive UI",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "deploy-commands": "node src/deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "@discordjs/voice": "^0.18.0",
+    "distube": "^5.2.3",
+    "@distube/spotify": "^2.0.2",
+    "@distube/yt-dlp": "^2.0.1",
+    "opusscript": "^0.1.1",
+    "libsodium-wrappers": "^0.7.15",
+    "genius-lyrics-api": "^3.0.4",
+    "dotenv": "^16.4.5",
+    "ffmpeg-static": "^5.2.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "discord",
+    "music",
+    "bot",
+    "youtube",
+    "spotify"
+  ],
+  "author": "AH_YA",
+  "license": "MIT",
+  "allowScripts": {
+    "@distube/yt-dlp@2.0.1": true,
+    "ffmpeg-static@5.3.0": true
+  }
+}
